@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Model as a Flask API</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>Iris Flower Predictor</h1>
+    <form action="/predict" method="post">
+      <input type="text" name="sepal-length" placeholder="sepal-length"> 4.3 - 7.9<br><br>
+      <input type="text" name="sepal-width" placeholder="sepal-width"> 2.0 - 4.4<br><br>
+      <input type="text" name="petal-length" placeholder="petal-length"> 1.0 - 6.9<br><br>
+      <input type="text" name="petal-width" placeholder="sepal-width"> 0.1 - 2.5<br><br>
+      <input type="submit" value="Predict">
+    </form>
+  </body>
+</html>
