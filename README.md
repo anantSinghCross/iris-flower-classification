@@ -35,3 +35,7 @@ To run the *api.py* head to the command prompt and type `python api.py`.
 #### Note
 
 * I'll definitely be improving the frontend as well as the backend for this project (2nd October '18) :D
+
+#### Change Notes
+
+* Improved Frontend (3rd October '18)
