@@ -38,4 +38,4 @@ To run the *api.py* head to the command prompt and type `python api.py`.
 
 #### Change Notes
 
-* Improved Frontend (3rd October '18)
+* Improved Frontend. Totally ignore the *CSS* formatting in the `<style>` tags. (3rd October '18) 
