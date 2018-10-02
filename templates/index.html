@@ -1,17 +1,63 @@
 <html>
   <head>
-    <title>Model as a Flask API</title>
+    <style>
+      body{
+        background-color: #595959;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      div.form{
+        box-shadow: 2px 2px 30px #1a1a1a;
+        width: 45vw;
+        background-color: #bfbfbf;
+        text-align: center; 
+        border-left-color: #a6a6a6;
+      }
+      form{
+        border-left-style: solid;
+        border-color: #9933ff;
+        border-left-width: 5px;
+        padding: 15px;
+      }
+      h1{
+        color: #f2f2f2;
+        text-align: center;
+      }
+      input[type=text]{
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        border: 0px;
+      }
+      input[type=submit]{
+        background-color: #b366ff;
+        width: 90px;
+        height: 30px;
+        border: 0px;
+      }
+      input[type=submit]:hover{
+        background-color: #a64dff;
+      }
+      span{
+        color: #ffffff;
+      }
+    </style>
+    <title>SVHN Model as a Flask API</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <h1>Iris Flower Predictor</h1>
+    <center>
+    <div class="form">
     <form action="/predict" method="post">
-      <input type="text" name="sepal-length" placeholder="sepal-length"> 4.3 - 7.9<br><br>
-      <input type="text" name="sepal-width" placeholder="sepal-width"> 2.0 - 4.4<br><br>
-      <input type="text" name="petal-length" placeholder="petal-length"> 1.0 - 6.9<br><br>
-      <input type="text" name="petal-width" placeholder="sepal-width"> 0.1 - 2.5<br><br>
+      Enter values between specified lengths<br><br>
+      <input type="text" name="sepal-length" placeholder="Sepal Length" autofocus required><span>&nbsp&nbsp&nbsp 4.3 - 7.9</span><br><br>
+      <input type="text" name="sepal-width" placeholder="Sepal Width" required><span>&nbsp&nbsp&nbsp 2.0 - 4.4</span><br><br>
+      <input type="text" name="petal-length" placeholder="Petal Length" required><span>&nbsp&nbsp&nbsp 1.0 - 6.9</span><br><br>
+      <input type="text" name="petal-width" placeholder="Petal Width" required><span>&nbsp&nbsp&nbsp 0.1 - 2.5</span><br><br>
       <input type="submit" value="Predict">
     </form>
-  </body>
+  </div>
+</center>
+</body>
 </html>
