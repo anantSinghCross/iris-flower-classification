@@ -21,9 +21,12 @@ def make_predictions():
                 pw = request.form.get('petal-width')
                 X = np.array([sl,sw,pl,pw]).reshape(1,-1)
                 prediction = model.predict(X)
+		
+		# following is a dict obj of python but you won't need it because we are not using this obj
+		# just for the purpose of showing you
                 response = {}
                 response['predictions'] = prediction
-
+		# finally, returning JSON
                 return flask.jsonify(prediction.tolist())
 
 
