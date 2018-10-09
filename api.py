@@ -20,7 +20,6 @@ def make_predictions():
                 pl = request.form.get('petal-length')
                 pw = request.form.get('petal-width')
                 X = np.array([sl,sw,pl,pw]).reshape(1,-1)
-                # X =[[float(X['sepalLength']), float(X['sepalWidth']), float(X['petalLength']), float(X['petalWidth'])]]
                 prediction = model.predict(X)
                 response = {}
                 response['predictions'] = prediction
