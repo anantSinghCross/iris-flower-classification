@@ -26,8 +26,10 @@ def make_predictions():
 		# just for the purpose of showing you
                 response = {}
                 response['predictions'] = prediction
+		# converting to JSON obj
+		result = flask.jsonify(prediction.tolist())
 		# finally, returning JSON
-                return flask.jsonify(prediction.tolist())
+                return result
 
 
 if __name__ == '__main__':
