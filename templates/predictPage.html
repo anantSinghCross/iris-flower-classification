@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+      body{
+        background-color: #595959;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      div.form{
+        box-shadow: 2px 2px 30px #1a1a1a;
+        width: 45vw;
+        background-color: #bfbfbf;
+        text-align: center;
+        border-left-color: #a6a6a6;
+      }
+      form{
+        border-left-style: solid;
+        border-color: #9933ff;
+        border-left-width: 5px;
+        padding: 15px;
+      }
+      h1{
+        color: #f2f2f2;
+        text-align: center;
+      }
+      input[type=text]{
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        border: 0px;
+      }
+      input[type=submit]{
+        background-color: #b366ff;
+        width: 90px;
+        height: 30px;
+        border: 0px;
+      }
+      input[type=submit]:hover{
+        background-color: #a64dff;
+      }
+      span{
+        color: #ffffff;
+      }
+    </style>
+    <title>SVHN Model as a Flask API</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>Iris Flower Predictor</h1>
+    <center>
+    <div class="form">
+    <form>
+      <pre id="demo">{{ response }}</pre>
+    </form>
+  </div>
+</center>
+</body>
+</html>
