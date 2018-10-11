@@ -1,6 +1,6 @@
 import flask
+import json
 import numpy as np
-from scipy import misc
 from sklearn.externals import joblib
 from flask import Flask, render_template, request
 
@@ -21,16 +21,10 @@ def make_predictions():
                 pw = request.form.get('petal-width')
                 X = np.array([sl,sw,pl,pw]).reshape(1,-1)
                 prediction = model.predict(X)
-		
-		# following is a dict obj of python but you won't need it because we are not using this obj
-		# just for the purpose of showing you
-                response = {}
-                response['predictions'] = prediction
-		# converting to JSON obj
-		result = flask.jsonify(prediction.tolist())
-		# finally, returning JSON
-                return result
-
+                resultText = json.dumps(prediction.tolist(),sort_keys = False)
+                # This json.dumps will convert 'prediction' to JSON
+                return render_template('predictPage.html',response=resultText)
+                # 'response' is a Jinja2 variable embedded in predictPage.html
 
 if __name__ == '__main__':
     model = joblib.load('model.pkl')
