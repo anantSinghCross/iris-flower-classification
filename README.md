@@ -32,11 +32,14 @@ To run the *api.py* head to the command prompt and type `python api.py`.
 * The *index.html* takes in values which are sent to the *api.py* running in the background.
 * *api.py* loads the pickled model and sends back the prediction.
 
-#### Note
-
-* I'll definitely be improving the frontend as well as the backend for this project (2nd Oct '18) :D
-* As of now *api.py* returns pure JSON object. Further, I'll be improving the way predicted value is shown just so the page looks better (9th Oct '18) :P
+***
 
 #### Change Notes
 
-* Improved Frontend. Totally ignore the *CSS* formatting in the `<style>` tags. (3rd Oct '18) 
+* **(3rd Oct '18)** Improved Frontend. Totally ignore the *CSS* formatting in the `<style>` tags. (3rd Oct '18)
+* **(9th Oct '18)** As of now *api.py* returns pure JSON object. Further, I'll be improving the way predicted value is shown just so the page looks better (9th Oct '18) :P
+* **(11 Oct '18)** A new *predictPage.html* page has been added which shows the prediction.
+
+#### Note
+
+* There won't be any further updates in this repo. 
