@@ -27,6 +27,12 @@ To run the *api.py* head to the command prompt and type `python api.py`.
 
 3. Finally, go to http://localhost:8000/ to get your *index.html* running.
 
+### What you should see
+
+![index.html](anantSinghCross.github.com/iris-flower-classification/index.jpg)
+
+![predictPage.html](anantSinghCross.github.com/iris-flower-classification/predictPage.jpg)
+
 ### Brief of what's happening
 
 * The *index.html* takes in values which are sent to the *api.py* running in the background.
