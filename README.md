@@ -29,9 +29,9 @@ To run the *api.py* head to the command prompt and type `python api.py`.
 
 ### What you should see
 
-![index.html](iris-flower-classification/index.JPG)
+![index.html](index.JPG)
 
-![predictPage.html](iris-flower-classification/predictPage.JPG)
+![predictPage.html](predictPage.JPG)
 
 ### Brief of what's happening
 
