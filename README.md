@@ -1,6 +1,6 @@
 # Iris Flower Classification
 
-A well-understood project that helped me grasp some of the basics of Machine Learning
+A well-understood project that helped me grasp some of the basics of Machine Learning. The project uses supervised learning to predict the type of flower.
 
 ## Overview of what we have to do
 
