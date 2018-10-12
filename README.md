@@ -29,7 +29,11 @@ To run the *api.py* head to the command prompt and type `python api.py`.
 
 ### What you should see
 
+* **index.html**
+
 ![index.html](index.JPG)
+
+* **predictPage.html**
 
 ![predictPage.html](predictPage.JPG)
 
