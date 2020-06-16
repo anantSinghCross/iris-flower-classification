@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.externals import joblib
 from flask import Flask, render_template, request
 
-
+global model
 app = Flask(__name__)
 
 @app.route("/")
