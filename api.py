@@ -4,7 +4,6 @@ import numpy as np
 from sklearn.externals import joblib
 from flask import Flask, render_template, request
 
-global model
 app = Flask(__name__)
 
 @app.route("/")
@@ -26,6 +25,6 @@ def make_predictions():
                 return render_template('predictPage.html',response=resultText)
                 # 'response' is a Jinja2 variable embedded in predictPage.html
 
-if __name__ == '__main__':
-    model = joblib.load('model.pkl')
-    app.run(host='0.0.0.0', port=8000, debug=True)
+# if __name__ == '__main__':
+model = joblib.load('model.pkl')
+    # app.run(host='0.0.0.0', port=8000, debug=True)
