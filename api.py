@@ -22,8 +22,10 @@ def make_predictions():
                 prediction = model.predict(X)
 
                 resultText = json.dumps(prediction.tolist(),sort_keys = False)
+                resultTextObject = json.loads(resultText)
                 # This json.dumps will convert 'prediction' to JSON
-                return render_template('predictPage.html',response=resultText)
+
+                return render_template('predictPage.html',response=resultTextObject[0])
                 # 'response' is a Jinja2 variable embedded in predictPage.html
 
 # if __name__ == '__main__':
