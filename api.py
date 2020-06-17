@@ -20,11 +20,10 @@ def make_predictions():
                 pw = request.form.get('petal-width')
                 X = np.array([sl,sw,pl,pw]).reshape(1,-1)
                 prediction = model.predict(X)
-                resultDict = {}
-                resultDict['resString'] = prediction[0]
-                resultText = json.dumps(resultDict,sort_keys = False)
+
+                resultText = json.dumps(prediction.tolist(),sort_keys = False)
                 # This json.dumps will convert 'prediction' to JSON
-                return render_template('predictPage.html',response=resultText['resString'])
+                return render_template('predictPage.html',response=resultText)
                 # 'response' is a Jinja2 variable embedded in predictPage.html
 
 # if __name__ == '__main__':
