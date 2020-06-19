@@ -30,7 +30,7 @@ def make_predictions():
 
 @app.route('/api')
 def hello():
-    response = {'MESSSAGE':'Welcome to the new API route'}
+    response = {'MESSAGE':'Welcome to the new API route'}
     return jsonify(response)
 
 # if __name__ == '__main__':
