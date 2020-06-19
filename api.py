@@ -2,7 +2,7 @@ import flask
 import json
 import numpy as np
 from sklearn.externals import joblib
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
@@ -27,6 +27,11 @@ def make_predictions():
 
                 return render_template('predictPage.html',response=resultTextObject[0])
                 # 'response' is a Jinja2 variable embedded in predictPage.html
+
+@app.route('/api')
+def hello():
+    response = {'MESSSAGE':'Welcome to the new API route'}
+    return jsonify(response)
 
 # if __name__ == '__main__':
 model = joblib.load('model.pkl')
